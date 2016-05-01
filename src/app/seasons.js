@@ -30,4 +30,12 @@ module.exports = {
   'Mr. Robot': 'S01E10',
   'New Girl': 'S02E25',
   'Orange is the New Black': 'S03E13',
+  'Person of Interest': 'S02E22',
+  'Rick and Morty': 'S02E10',
+  'Side om side': 'S03E10',
+  'Silicon Valley': 'S02E10',
+  'South Park': 'S19E10',
+  'Suits': 'S05E16',
+  'The Walking Dead': 'S02E13',
+  'Under the Dome': 'S02E13'
 };
