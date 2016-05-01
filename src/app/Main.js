@@ -16,16 +16,16 @@ const muiTheme = getMuiTheme({
   }
 });
 
-function lastInSeason(name, episode) {
-  if(seasons[name]) {
+function lastInSeason (name, episode) {
+  if (seasons[name]) {
     return episode === seasons[name];
   } else {
-    return false
+    return false;
   }
 }
 
-function newSeries(lastWatched) {
-  return lastWatched.slice(-2) === "00";
+function newSeries (lastWatched) {
+  return lastWatched.slice(-2) === '00';
 }
 
 class Main extends React.Component {
@@ -63,7 +63,7 @@ class Main extends React.Component {
         }).map(
           (series) =>
           <ListItem
-          primaryText={series.name + " " + series.lastWatched}
+          primaryText={series.name + ' ' + series.lastWatched}
           key={series.name}
           leftAvatar={<Avatar src={series.thumbnail} />}
           />
@@ -78,7 +78,7 @@ class Main extends React.Component {
         }).map(
           (series) =>
           <ListItem
-          primaryText={series.name + " " + series.lastWatched}
+          primaryText={series.name + ' ' + series.lastWatched}
           key={series.name}
           leftAvatar={<Avatar src={series.thumbnail} />}
           />
