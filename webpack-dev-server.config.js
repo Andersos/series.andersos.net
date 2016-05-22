@@ -13,7 +13,6 @@ const config = {
   resolve: {
     extensions: ['', '.js']
   },
-  // Server Configuration options
   devServer: {
     contentBase: 'src/www',
     devtool: 'eval',

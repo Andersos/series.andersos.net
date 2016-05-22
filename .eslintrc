@@ -1,5 +1,16 @@
 {
   "extends": [
-    "andersos"
-  ]
+    "andersos", "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "fetch": false
+    }
 }

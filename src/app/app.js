@@ -1,7 +1,7 @@
-import React from 'react'; // eslint-disable-line
+import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import Main from './Main'; // eslint-disable-line
+import Main from './Main';
 
 injectTapEventPlugin();
 

@@ -36,6 +36,13 @@ module.exports = {
   'Silicon Valley': 'S02E10',
   'South Park': 'S19E10',
   'Suits': 'S05E16',
+  'The Big Bang Theory': 'S09E24',
   'The Walking Dead': 'S02E13',
-  'Under the Dome': 'S02E13'
+  'Titansgrave: The Ashes of Valkana': 'S01E10',
+  'Two and a Half Men': 'S12E16',
+  'Typen til': 'S01E08',
+  'Under the Dome': 'S02E13',
+  'V (2009)': 'S02E10',
+  'Video Game High School (VGHS)': 'S03E06',
+  'Whitney': 'S02E16'
 };

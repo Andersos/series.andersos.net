@@ -1,13 +1,13 @@
 import React from 'react';
 import {blue500} from 'material-ui/styles/colors';
-import AppBar from 'material-ui/AppBar'; // eslint-disable-line
+import AppBar from 'material-ui/AppBar';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'; // eslint-disable-line
-import Avatar from 'material-ui/Avatar'; // eslint-disable-line
-import List from 'material-ui/List'; // eslint-disable-line
-import ListItem from 'material-ui/List/ListItem'; // eslint-disable-line
-import Subheader from 'material-ui/Subheader'; // eslint-disable-line
-import seasons from './seasons.js';
+import List from 'material-ui/List';
+import MediaItem from './MediaItem.js';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Subheader from 'material-ui/Subheader';
+
+import { watching, newSeries, ignored, endOfSeason, done } from './series.js';
 
 const muiTheme = getMuiTheme({
   fontFamily: 'Roboto, sans-serif',
@@ -15,18 +15,6 @@ const muiTheme = getMuiTheme({
     primary1Color: blue500
   }
 });
-
-function lastInSeason (name, episode) {
-  if (seasons[name]) {
-    return episode === seasons[name];
-  } else {
-    return false;
-  }
-}
-
-function newSeries (lastWatched) {
-  return lastWatched.slice(-2) === '00';
-}
 
 class Main extends React.Component {
   constructor (props, context) {
@@ -38,7 +26,7 @@ class Main extends React.Component {
   }
   componentDidMount () {
     const _this = this;
-    fetch('http://api.andersos.net/series.json') // eslint-disable-line
+    fetch('http://api.andersos.net/series.json')
     .then((response) => {
       return response.json();
     }).then((json) => {
@@ -59,30 +47,40 @@ class Main extends React.Component {
       <Subheader>Watching</Subheader>
       {
         this.state.listData.filter((series) => {
-          return !lastInSeason(series.name, series.lastWatched) && !newSeries(series.lastWatched) && !series.ignored && !series.cancelled;
-        }).map(
-          (series) =>
-          <ListItem
-          primaryText={series.name + ' ' + series.lastWatched}
-          key={series.name}
-          leftAvatar={<Avatar src={series.thumbnail} />}
-          />
-        )
+          return watching(series);
+        }).map((series) => <MediaItem series={series} key={series.name} />)
+      }
+      </List>
+      <List>
+      <Subheader>New</Subheader>
+      {
+        this.state.listData.filter((series) => {
+          return newSeries(series);
+        }).map((series) => <MediaItem series={series} key={series.name} />)
+      }
+      </List>
+      <List>
+      <Subheader>End of season</Subheader>
+      {
+        this.state.listData.filter((series) => {
+          return endOfSeason(series);
+        }).map((series) => <MediaItem series={series} key={series.name} />)
       }
       </List>
       <List>
       <Subheader>Ignored</Subheader>
       {
         this.state.listData.filter((series) => {
-          return newSeries(series.lastWatched) || series.ignored;
-        }).map(
-          (series) =>
-          <ListItem
-          primaryText={series.name + ' ' + series.lastWatched}
-          key={series.name}
-          leftAvatar={<Avatar src={series.thumbnail} />}
-          />
-        )
+          return ignored(series);
+        }).map((series) => <MediaItem series={series} key={series.name} />)
+      }
+      </List>
+      <List>
+      <Subheader>Done</Subheader>
+      {
+        this.state.listData.filter((series) => {
+          return done(series);
+        }).map((series) => <MediaItem series={series} key={series.name} />)
       }
       </List>
       </div>

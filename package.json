@@ -8,10 +8,12 @@
     "url": "git@github.com:Andersos/series.andersos.net.git"
   },
   "scripts": {
-    "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "build": "webpack --config webpack-production.config.js --progress --colors",
-    "test": "eslint .",
-    "deploy": "npm run build && git subtree push --prefix build origin gh-pages"
+    "deploy": "npm run build && git subtree push --prefix build origin gh-pages",
+    "dev": "npm run start",
+    "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
+    "tdd": "eslint . && ./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
+    "test": "eslint . && ./node_modules/.bin/mocha --compilers js:babel-core/register"
   },
   "devDependencies": {
     "babel-core": "^6.3.26",
