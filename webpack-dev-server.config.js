@@ -1,18 +1,15 @@
 const webpack = require('webpack');
 const path = require('path');
-const buildPath = path.resolve(__dirname, 'build');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
-const config = {
+module.exports = {
   entry: [
+    'whatwg-fetch',
     'webpack/hot/dev-server',
     'webpack/hot/only-dev-server',
-    path.join(__dirname, '/src/app/app.js')
+    './src/app/app.js'
   ],
-  resolve: {
-    extensions: ['', '.js']
-  },
   devServer: {
     contentBase: 'src/www',
     devtool: 'eval',
@@ -23,15 +20,12 @@ const config = {
   },
   devtool: 'eval',
   output: {
-    path: buildPath,
+    path: '/build',
     filename: 'app.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.ProvidePlugin({
-      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
-    }),
-    new TransferWebpackPlugin([{from: 'www'}], path.resolve(__dirname, 'src'))
+    new TransferWebpackPlugin([{from: 'www'}], 'src')
   ],
   module: {
     loaders: [
@@ -41,10 +35,5 @@ const config = {
         exclude: [nodeModulesPath]
       }
     ]
-  },
-  eslint: {
-    configFile: '.eslintrc'
   }
 };
-
-module.exports = config;
