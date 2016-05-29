@@ -25,7 +25,7 @@ module.exports = {
   'Mammon': 'S01E06',
   'Master of none': 'S01E10',
   'Mike & Molly': 'S04E22',
-  'Modern Family': 'S07E16',
+  'Modern Family': 'S07E22',
   'Mom': 'S01E22',
   'Mr. Robot': 'S01E10',
   'New Girl': 'S02E25',
@@ -44,5 +44,7 @@ module.exports = {
   'Under the Dome': 'S02E13',
   'V (2009)': 'S02E10',
   'Video Game High School (VGHS)': 'S03E06',
-  'Whitney': 'S02E16'
+  'Whitney': 'S02E16',
+  'Trophy Wife': 'S01E22',
+  'Trekant': 'S02E07'
 };
