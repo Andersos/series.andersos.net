@@ -46,5 +46,11 @@ module.exports = {
   'Video Game High School (VGHS)': 'S03E06',
   'Whitney': 'S02E16',
   'Trophy Wife': 'S01E22',
-  'Trekant': 'S02E07'
+  'Trekant': 'S02E07',
+  'Skam': 'S02E12',
+  'The Simpsons': 'S27E22',
+  'The Newsroom': 'S03E06',
+  'How I Met Your Mother': 'S09E24',
+  'The IT Crowd': 'S04E06',
+  'The Crazy Ones': 'S01E22'
 };
