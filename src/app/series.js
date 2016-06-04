@@ -12,7 +12,7 @@ function _lastInSeason (series) {
 }
 
 export function watching (series) {
-  return series.hasOwnProperty('name') && !_lastInSeason(series) && !newSeries(series) && !series.ignored && !series.cancelled;
+  return series.hasOwnProperty('name') && !_lastInSeason(series) && !newSeries(series) && !ignored(series) && !series.cancelled;
 }
 
 export function ignored (series) {
