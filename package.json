@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack-production.config.js --progress --colors",
-    "deploy": "npm run build && git config --global commit.gpgsign false && git subtree push --prefix build origin gh-pages && git config --global commit.gpgsign true",
+    "deploy": "npm run build && git subtree push --prefix build origin gh-pages",
     "dev": "npm run start",
     "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "tdd": "eslint . && ./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
