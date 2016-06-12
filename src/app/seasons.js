@@ -85,6 +85,7 @@ module.exports = {
   'Two and a Half Men': 'S12E16',
   'Typen til': 'S01E08',
   'Under the Dome': 'S02E13',
+  'Unge lovende': 'S01E06',
   'V (2009)': 'S02E10',
   'Video Game High School (VGHS)': 'S03E06',
   'Whitney': 'S02E16'
