@@ -67,7 +67,7 @@ module.exports = {
   'Schmokk': 'S01E06',
   'Scrubs': 'S09E13',
   'Side om side': 'S03E10',
-  'Silicon Valley': 'S02E10',
+  'Silicon Valley': 'S03E10',
   'Skam': 'S02E12',
   'South Park': 'S19E10',
   'Suits': 'S05E16',
