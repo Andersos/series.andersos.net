@@ -6,7 +6,6 @@ import List from 'material-ui/List';
 import MediaItem from './MediaItem.js';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Subheader from 'material-ui/Subheader';
 
 import { watching, newSeries, ignored, endOfSeason, done } from './series.js';
 
@@ -44,14 +43,13 @@ class Main extends React.Component {
       <MuiThemeProvider muiTheme={muiTheme}>
       <div>
       <AppBar title='Series' onLeftIconButtonTouchTap={() => {
-          window.location.href = 'http://api.andersos.net'
+        window.location.href = 'http://api.andersos.net';
       }}/>
       <Tabs>
       <Tab label="Watching" >
       <List>
       {
         this.state.listData.filter((series) => {
-
           return watching(series);
         }).map((series) => <MediaItem series={series} key={series.name} />)
       }

@@ -87,7 +87,6 @@ module.exports = {
   'Trophy Wife': 'S01E22',
   'Typen til': 'S02E08',
   'Two and a Half Men': 'S12E16',
-  'Typen til': 'S01E08',
   'Under the Dome': 'S02E13',
   'Unge lovende': 'S01E06',
   'V (2009)': 'S02E10',
