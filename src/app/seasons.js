@@ -48,7 +48,7 @@ module.exports = {
   'Leo tar valget': 'S01E08',
   'Lilyhammer': 'S02E08',
   'Limitless': 'S01E22',
-  'Live redder verden litt': 'S01E10',
+  'Live redder verden litt': 'S01E05',
   'Lost': 'S06E18',
   'Love': 'S01E10',
   'Lyngbø Og Hærlands Big Bang': 'S02E07',
