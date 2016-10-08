@@ -25,6 +25,7 @@ module.exports = {
   'Derren Brown: Trick of the Mind': 'S03E06',
   'Derren Brown: Trick Or Treat': 'S02E06',
   'Diktaturet': 'S01E08',
+  'Easy': 'S01E08',
   'Elementary': 'S01E24',
   'Episodes': 'S04E09',
   'Family Guy': 'S14E20',
@@ -47,6 +48,7 @@ module.exports = {
   'Leo tar valget': 'S01E08',
   'Lilyhammer': 'S02E08',
   'Limitless': 'S01E22',
+  'Live redder verden litt': 'S01E10',
   'Lost': 'S06E18',
   'Love': 'S01E10',
   'Lyngbø Og Hærlands Big Bang': 'S02E07',
@@ -90,5 +92,6 @@ module.exports = {
   'Unge lovende': 'S01E06',
   'V (2009)': 'S02E10',
   'Video Game High School (VGHS)': 'S03E06',
+  'Ville veier': 'S01E10',
   'Whitney': 'S02E16'
 };
