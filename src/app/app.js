@@ -5,4 +5,4 @@ import Main from './Main';
 
 injectTapEventPlugin();
 
-ReactDOM.render(<Main />, document.getElementById('app'));
+ReactDOM.render(<Main />, document.getElementById('app')); // eslint-disable-line

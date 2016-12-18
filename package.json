@@ -12,8 +12,9 @@
     "deploy": "npm run build && git subtree push --prefix build origin gh-pages",
     "dev": "npm run start",
     "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
-    "tdd": "eslint . && ./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
-    "test": "eslint . && ./node_modules/.bin/mocha --compilers js:babel-core/register"
+    "tdd": "npm run lint && ./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
+    "test": "npm run lint && ./node_modules/.bin/mocha --compilers js:babel-core/register",
+    "lint": "eslint . --ignore-pattern build --fix"
   },
   "devDependencies": {
     "babel-core": "^6.3.26",
@@ -21,23 +22,32 @@
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "eslint": "^3.7.1",
-    "eslint-config-andersos": "^0.2.0",
-    "eslint-plugin-react": "^6.3.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
     "html-webpack-plugin": "^2.7.2",
     "mocha": "^3.1.0",
-    "react-hot-loader": "^3.0.0-beta.5",
-    "transfer-webpack-plugin": "^0.1.4",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "react-hot-loader": "^3.0.0-beta.5"
   },
   "dependencies": {
     "exports-loader": "^0.6.3",
-    "imports-loader": "^0.6.5",
+    "imports-loader": "^0.7.0",
     "material-ui": "^0.16.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
-    "react-tap-event-plugin": "^1.0.0",
-    "whatwg-fetch": "^1.0.0"
+    "react-tap-event-plugin": "^2.0.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "whatwg-fetch": "^2.0.1"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "rules": {
+      "react/jsx-filename-extension": 0,
+      "no-prototype-builtins": 0
+    }
   }
 }
