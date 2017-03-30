@@ -10,10 +10,13 @@ export function newSeries(series) {
 
 function _lastInSeason(series) { // eslint-disable-line
   if (series.hasOwnProperty('name') && seasons[series.name]) {
+    if (series.lastWatched.substring(0, 3) !== seasons[series.name].substring(0, 3)) {
+      console.log(`${series.name} is not in the latest season in seasons.`);
+    }
     return series.lastWatched === seasons[series.name];
   }
   if (!newSeries(series) && !ignored(series) && series.name !== undefined) {
-    console.log(`${series.name} is missing in seasons overview`);
+    console.log(`${series.name} is missing in seasons overview.`);
   }
   return false;
 }
