@@ -64,7 +64,7 @@ module.exports = {
   'Mr. Robot': 'S02E12',
   'New Girl': 'S02E25',
   Numb3rs: 'S06E16',
-  'Orange is the New Black': 'S04E13',
+  'Orange is the New Black': 'S05E13',
   Outsourced: 'S01E22',
   'Partners (2012)': 'S01E13',
   'Penn & Teller: Fool Us': 'S03E13',
