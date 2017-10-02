@@ -58,7 +58,7 @@ module.exports = {
   Love: 'S02E12',
   'Lyngbø Og Hærlands Big Bang': 'S02E07',
   Mammon: 'S01E06',
-  'Master of none': 'S01E10',
+  'Master of none': 'S02E10',
   Melk: 'S01E20',
   'Mike & Molly': 'S04E22',
   'Mind Control with Derren Brown': 'S01E06',
