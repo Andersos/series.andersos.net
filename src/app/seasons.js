@@ -82,7 +82,7 @@ module.exports = {
   'Silicon Valley': 'S04E10',
   Skam: 'S04E10',
   'South Park': 'S20E10',
-  Suits: 'S06E16',
+  Suits: 'S07E16',
   Tabletop: 'S04E20',
   'Taxi (2011)': 'S01E04',
   'The Big Bang Theory': 'S10E24',
