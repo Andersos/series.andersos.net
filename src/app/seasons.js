@@ -12,7 +12,7 @@ module.exports = {
   'Better Off Ted': 'S02E13',
   Billions: 'S02E12',
   'Black Mirror': 'S03E06',
-  'Bob\'s Burgers': 'S05E21',
+  "Bob's Burgers": 'S05E21',
   'Bron/Broen': 'S03E10',
   Chuck: 'S05E13',
   Community: 'S03E22',
@@ -36,7 +36,7 @@ module.exports = {
   Futurama: 'S07E26',
   'Game of Thrones': 'S06E10',
   'Go On': 'S01E22',
-  'Grey\'s Anatomy': 'S07E22',
+  "Grey's Anatomy": 'S07E22',
   'Happy Endings': 'S03E23',
   'Hello Ladies': 'S01E08',
   Heroes: 'S04E18',
@@ -101,4 +101,5 @@ module.exports = {
   'Ville veier': 'S01E10',
   Westworld: 'S01E10',
   Whitney: 'S02E16',
+  ZombieLars: 'S01E13',
 };
