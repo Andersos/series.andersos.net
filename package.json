@@ -3,6 +3,7 @@
   "description": "An overview of the series I watch",
   "version": "0.0.1",
   "homepage": "series.andersos.net",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:Andersos/series.andersos.net.git"
@@ -11,7 +12,8 @@
     "build": "webpack --config webpack-production.config.js --progress --colors",
     "deploy": "npm run build && git subtree push --prefix build origin gh-pages",
     "dev": "npm run start",
-    "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
+    "start":
+      "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "tdd": "npm run lint && ./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
     "test": "npm run lint && ./node_modules/.bin/mocha --compilers js:babel-core/register",
     "lint": "eslint . --ignore-pattern build --fix"
