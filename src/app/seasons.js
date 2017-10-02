@@ -92,7 +92,7 @@ module.exports = {
   'The Michael J. Fox Show': 'S01E22',
   'The Mindy Project': 'S06E10',
   'The Newsroom (2012)': 'S03E06',
-  'The Simpsons': 'S28E22',
+  'The Simpsons': 'S29E22',
   'The Walking Dead': 'S02E13',
   'Titansgrave: The Ashes of Valkana': 'S01E10',
   Trekant: 'S02E07',
