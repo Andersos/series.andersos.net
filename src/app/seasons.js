@@ -36,7 +36,7 @@ module.exports = {
   Friends: 'S10E18',
   'Friends from College': 'S01E08',
   Futurama: 'S07E26',
-  'Game of Thrones': 'S06E10',
+  'Game of Thrones': 'S07E07',
   'Go On': 'S01E22',
   "Grey's Anatomy": 'S07E22',
   'Happy Endings': 'S03E23',
