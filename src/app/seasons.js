@@ -95,6 +95,7 @@ module.exports = {
   'Typen til': 'S02E08',
   'Two and a Half Men': 'S12E16',
   'Under the Dome': 'S02E13',
+  Ozark: 'S01E10',
   'Unge lovende': 'S02E06',
   'V (2009)': 'S02E10',
   'Video Game High School (VGHS)': 'S03E06',
