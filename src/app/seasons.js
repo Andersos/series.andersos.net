@@ -68,6 +68,7 @@ module.exports = {
   'New Girl': 'S02E25',
   Numb3rs: 'S06E16',
   'Orange is the New Black': 'S05E13',
+  OsloGirls: 'S01E18',
   Outsourced: 'S01E22',
   Ozark: 'S01E10',
   'Partners (2012)': 'S01E13',
