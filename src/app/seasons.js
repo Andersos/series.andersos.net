@@ -12,7 +12,7 @@ module.exports = {
   'Better Off Ted': 'S02E13',
   Billions: 'S02E12',
   'Black Mirror': 'S03E06',
-  "Bob's Burgers": 'S05E21',
+  "Bob's Burgers": 'S07E22',
   'Bron/Broen': 'S03E10',
   Chuck: 'S05E13',
   Community: 'S03E22',
