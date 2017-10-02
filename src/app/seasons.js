@@ -70,7 +70,7 @@ module.exports = {
   'Penn & Teller: Fool Us': 'S03E13',
   'Person of Interest': 'S02E22',
   Portkode: 'S02E08',
-  'Rick and Morty': 'S02E10',
+  'Rick and Morty': 'S03E10',
   Schmokk: 'S01E06',
   Scrubs: 'S09E13',
   'Side om side': 'S04E10',
