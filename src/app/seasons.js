@@ -75,7 +75,7 @@ module.exports = {
   Scrubs: 'S09E13',
   'Side om side': 'S04E10',
   'Silicon Valley': 'S03E10',
-  Skam: 'S03E10',
+  Skam: 'S04E10',
   'South Park': 'S20E10',
   Suits: 'S06E16',
   Tabletop: 'S04E20',
