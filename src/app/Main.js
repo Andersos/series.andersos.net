@@ -24,7 +24,7 @@ class Main extends React.Component {
     };
   }
   componentDidMount() {
-    fetch('http://api.andersos.net/series.json') // eslint-disable-line
+    fetch('https://api.andersos.net/series.json') // eslint-disable-line
     .then(response => response.json()).then((json) => {
       this.setState({
         listData: json,
